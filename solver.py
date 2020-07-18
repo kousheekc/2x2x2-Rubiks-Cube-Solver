@@ -11,9 +11,9 @@ level = pickle.load(levelFile)
 # scrambled state taken from rubik.py file
 scrambled = rubik.input_configuration()
 
-# level[scrmabled] steps required to solve
+# level[scrambled] steps required to solve
 for i in range(level[scrambled]):
-    # get parent of current scarmbled state
+    # get parent of current scrambled state
     scrambled_parent = parent[scrambled]
     
     if scrambled_parent == rubik.apply_move(rubik.F, scrambled):
